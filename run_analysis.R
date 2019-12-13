@@ -193,8 +193,8 @@ Total[condition == "train", lapply(.SD, mean, na.rm=T), by = .(subject, activity
 
 Total[, lapply(.SD, mean, na.rm=T), by = .(subject, activity_number, activity), .SDcols = VectorMeanSD]
 
-# Let's write this one to a csv file to be uploaded to github:
-write.csv2(Total[, lapply(.SD, mean, na.rm=T), by = .(subject, activity_number, activity), .SDcols = VectorMeanSD], "./week4/Output Assignment/AssignmentTidyDataset.csv", row.names=F)
+# Let's write this one to a txt file to be uploaded to github:
+write.table(Total[, lapply(.SD, mean, na.rm=T), by = .(subject, activity_number, activity), .SDcols = VectorMeanSD], "./week4/Output Assignment/AssignmentTidyDataset.txt", row.names=F)
 
 # The scripting work is done now, unfortunately I still got to make an annoying codebook and README file. 
 # For the moment I prefer to play a videogame, but not before I finish here with a last summary check that
