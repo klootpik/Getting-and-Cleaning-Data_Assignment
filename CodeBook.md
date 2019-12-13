@@ -15,7 +15,7 @@ I didn't design any study, but you can find information about this in the origin
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-This zipfile also contains the raw data files, which my run.analysis.R ultimately converts in a tidy data set named 'AssignmentTidyDataset.csv'. Hereby I try to describe some of the stuf that my script needs as input and is worthy noting in this codebook. 
+This zipfile also contains the raw data files, which my run.analysis.R ultimately converts in a tidy data set named 'AssignmentTidyDataset.txt'. Hereby I try to describe some of the stuf that my script needs as input and is worthy noting in this codebook. 
 After unzipping the zipfile and discovering a whole lot of files, I tried to figure out which raw files I actually needed. Then I imported these as data.tables in the script, the chosen raw files where:
  
 'activity_labels.txt': Links the class labels with their activity name. This is the content:
