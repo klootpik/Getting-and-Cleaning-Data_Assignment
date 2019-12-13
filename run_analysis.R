@@ -111,7 +111,7 @@ names(X_test) <- features$feature
 
 # So.. lets go. First I merge 'Y_train' with 'activity', so you got the description of the activity at hand.
 
-Y_train <- merge(Y_train, activity, all.x = T)
+Y_train <- merge(Y_train, activity, all.x = T, sort = F)
 # just a check, counting activity and numbers:
 Y_train[, .N, .(activity_number, activity)]
 
@@ -149,7 +149,7 @@ TrainTotal[,.N, .(subject, activity_number, activity)]
 
 # Lets do the same for the test files!
 
-Y_test <- merge(Y_test, activity, all.x = T)
+Y_test <- merge(Y_test, activity, all.x = T, sort = F)
 Y_test[, .N, .(activity_number, activity)]
 names(X_test) <- features$feature
 
